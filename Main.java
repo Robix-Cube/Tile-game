@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.awt.*;
+
 
 public class Main
 {
@@ -6,5 +8,6 @@ public class Main
 	{
 		Init Game=new Init();
 		Game.makeWindow();
+		Game.fillWindow();
 	}
 }

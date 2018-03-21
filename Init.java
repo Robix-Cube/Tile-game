@@ -6,12 +6,13 @@ public class Init
 	private JButton[] buttons=new JButton[12];
 	private JPanel panels=new JPanel();
 	private GridLayout grid=new GridLayout(3,4);
+	private JFrame window=new JFrame();
 	
 	public void makeWindow()
 	{
-		JFrame window=new JFrame();
+        fillWindow();
 		window.setTitle("Tile Swap Game");
-		window.setSize(448,360);	
+		window.setSize(475,400);	
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		window.setVisible(true);
 	}
@@ -27,6 +28,9 @@ public class Init
 		{
 			panels.add(buttons[i]);
 		}
+		panels.setLayout(grid); 
+		panels.setVisible(true);
+		window.add(panels);
 	}
 }
 

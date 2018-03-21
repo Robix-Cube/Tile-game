@@ -8,6 +8,6 @@ public class Main
 	{
 		Init Game=new Init();
 		Game.makeWindow();
-		Game.fillWindow();
+		//Game.fillWindow();
 	}
 }
